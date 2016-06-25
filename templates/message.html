@@ -1,0 +1,6 @@
+<div class="message" id="m{{ message["id"] }}" style="width: 500px">
+<h3>{{message.get("created") }} Пришел заказ:</h3>
+<p>
+     {% module linkify(message["message"]) %}
+</p>
+</div>
